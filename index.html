@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+	<title>Test</title>
+</head>
+<body>
+	<div id="app">
+		<v-app>
+			<v-content>
+				<v-container>
+					<h1>{{welcome}}</h1>
+					<nav>
+						<v-btn to="/">Home</v-btn>
+						<v-btn to="/list">List</v-btn>
+					</nav>
+				</v-container>
+				<router-view></router-view>
+			</v-content>
+		</v-app>
+	</div>
+
+<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+
+<script src="main.js"></script>
+</body>
+</body>
+</html>
